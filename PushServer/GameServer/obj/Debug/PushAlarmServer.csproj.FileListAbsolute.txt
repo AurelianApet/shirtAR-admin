@@ -1,0 +1,11 @@
+P:\Tayo\server\bin\PushAlarmServer.exe
+P:\Tayo\server\bin\PushAlarmServer.pdb
+P:\Tayo\server\bin\ko\PushAlarmServer.resources.dll
+P:\Tayo\server\GameServer\obj\Debug\ArGateway.frmServerSetting.resources
+P:\Tayo\server\GameServer\obj\Debug\ArGateway.frmMain.resources
+P:\Tayo\server\GameServer\obj\Debug\PBMBadukiServer.Properties.Resources.resources
+P:\Tayo\server\GameServer\obj\Debug\ArGateway.frmMain.ko.resources
+P:\Tayo\server\GameServer\obj\Debug\PushAlarmServer.csproj.GenerateResource.Cache
+P:\Tayo\server\GameServer\obj\Debug\ko\PushAlarmServer.resources.dll
+P:\Tayo\server\GameServer\obj\Debug\PushAlarmServer.exe
+P:\Tayo\server\GameServer\obj\Debug\PushAlarmServer.pdb

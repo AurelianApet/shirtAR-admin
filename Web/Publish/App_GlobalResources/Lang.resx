@@ -1,0 +1,798 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="STR_QRCODE_MANAGE" xml:space="preserve">
+    <value>QR코드관리</value>
+  </data>
+  <data name="STR_LOGIN" xml:space="preserve">
+    <value>로그인</value>
+  </data>
+  <data name="STR_LOGIN_AUTOLOGIN" xml:space="preserve">
+    <value>자동로그인</value>
+  </data>
+  <data name="STR_LOGIN_ID" xml:space="preserve">
+    <value>아이디</value>
+  </data>
+  <data name="STR_LOGIN_IDSAVE" xml:space="preserve">
+    <value>아이디저장</value>
+  </data>
+  <data name="STR_LOGIN_LOGO" xml:space="preserve">
+    <value>/img/logo_ko.png</value>
+  </data>
+  <data name="STR_LOGIN_PWD" xml:space="preserve">
+    <value>패스워드</value>
+  </data>
+  <data name="STR_LOGIN_TITLE" xml:space="preserve">
+    <value>본 서비스를 리용하시려면 로그인 하셔야 합니다.</value>
+  </data>
+  <data name="STR_LOGOUT" xml:space="preserve">
+    <value>로그아웃</value>
+  </data>
+  <data name="STR_SETTING" xml:space="preserve">
+    <value>설 정</value>
+  </data>
+  <data name="STR_TITLE" xml:space="preserve">
+    <value>“옷AR” 관리자페지</value>
+  </data>
+  <data name="STR_ACCOUNT_MANAGE" xml:space="preserve">
+    <value>계정관리</value>
+  </data>
+  <data name="STR_APP_SETTING" xml:space="preserve">
+    <value>APP설정</value>
+  </data>
+  <data name="STR_PASSWORD_CHANGE" xml:space="preserve">
+    <value>패스워드변경</value>
+  </data>
+  <data name="MSG_EXIST_LOGINID" xml:space="preserve">
+    <value>이미 등록된 아이디입니다.</value>
+  </data>
+  <data name="MSG_INPUT_LOGINID" xml:space="preserve">
+    <value>등록자ID를 입력하십시오.</value>
+  </data>
+  <data name="MSG_INPUT_NICKNAME" xml:space="preserve">
+    <value>등록자명을 입력하십시오.</value>
+  </data>
+  <data name="MSG_INPUT_PASSWORD" xml:space="preserve">
+    <value>패스워드를 입력하십시오.</value>
+  </data>
+  <data name="MSG_INPUT_PASSWORD_CONFIRM" xml:space="preserve">
+    <value>확인 패스워드를 입력하십시오.</value>
+  </data>
+  <data name="MSG_INPUT_PASSWORD_ERROR" xml:space="preserve">
+    <value>입력하신 패스워드가 일치하지 않습니다.</value>
+  </data>
+  <data name="MSG_LOGINID_EXIST_SPEC" xml:space="preserve">
+    <value>등록자ID에 특수문자가 존재합니다.</value>
+  </data>
+  <data name="MSG_NICKNAME_EXIST_SPEC" xml:space="preserve">
+    <value>등록자명에 특수문자가 존재합니다.</value>
+  </data>
+  <data name="MSG_ACCOUNT_REG_SUCCESS" xml:space="preserve">
+    <value>정확히 등록되였습니다.</value>
+  </data>
+  <data name="STR_ACCOUNT_ADD" xml:space="preserve">
+    <value>계정추가</value>
+  </data>
+  <data name="STR_ACCOUNT_CHANGE" xml:space="preserve">
+    <value>계정수정</value>
+  </data>
+  <data name="STR_ACCOUNT_LEVEL" xml:space="preserve">
+    <value>계정권한</value>
+  </data>
+  <data name="STR_ACCOUNT_LIST" xml:space="preserve">
+    <value>계정목록</value>
+  </data>
+  <data name="STR_ADD" xml:space="preserve">
+    <value>추 가</value>
+  </data>
+  <data name="STR_ADMINISTRATOR" xml:space="preserve">
+    <value>최고 관리자</value>
+  </data>
+  <data name="STR_CHANGE" xml:space="preserve">
+    <value>수 정</value>
+  </data>
+  <data name="STR_CONFIRM" xml:space="preserve">
+    <value>확 인</value>
+  </data>
+  <data name="STR_ENV_SETTING" xml:space="preserve">
+    <value>환경설정</value>
+  </data>
+  <data name="STR_GAE" xml:space="preserve">
+    <value>개</value>
+  </data>
+  <data name="STR_LICENSER" xml:space="preserve">
+    <value>License 관리자</value>
+  </data>
+  <data name="STR_LOGINID" xml:space="preserve">
+    <value>등록자ID</value>
+  </data>
+  <data name="STR_LOG_MANAGE" xml:space="preserve">
+    <value>로그관리</value>
+  </data>
+  <data name="STR_MY_ACCOUNT" xml:space="preserve">
+    <value>내 계정</value>
+  </data>
+  <data name="STR_MY_ACCOUNT_INFO" xml:space="preserve">
+    <value>내 계정 정보</value>
+  </data>
+  <data name="STR_NICKNAME" xml:space="preserve">
+    <value>등록자명</value>
+  </data>
+  <data name="STR_PASSWORD" xml:space="preserve">
+    <value>패스워드</value>
+  </data>
+  <data name="STR_PASSWORD_CONFIRM" xml:space="preserve">
+    <value>패스워드 확인</value>
+  </data>
+  <data name="STR_QRCODE_COUNT" xml:space="preserve">
+    <value>QR코드생성수량</value>
+  </data>
+  <data name="MSG_ACCOUNT_CHANGE_ERROR" xml:space="preserve">
+    <value>계정정보를 변경하던중 예상치않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_ACCOUNT_CHANGE_SUCCESS" xml:space="preserve">
+    <value>계정정보를 정확히 변경하였습니다.</value>
+  </data>
+  <data name="MSG_ACCOUNT_REG_ERROR" xml:space="preserve">
+    <value>계정등록중 예상치않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_ADMIN_ACEPT_ONLY" xml:space="preserve">
+    <value>최고관리자만 접근가능합니다.</value>
+  </data>
+  <data name="MSG_CONFIG_SET_ERROR" xml:space="preserve">
+    <value>환경설정과정에 예상치않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_CONFIG_SET_SUCCESS" xml:space="preserve">
+    <value>정확히 설정하였습니다.</value>
+  </data>
+  <data name="MSG_EXIST_NICKNAME" xml:space="preserve">
+    <value>등록자명이 중복되였습니다.</value>
+  </data>
+  <data name="MSG_INPUT_CHANGE_PASSWORD" xml:space="preserve">
+    <value>변경할 패스워드를 입력하십시오.</value>
+  </data>
+  <data name="MSG_INPUT_SEARCH_STRING" xml:space="preserve">
+    <value>검색문자열을 입력해주십시오.</value>
+  </data>
+  <data name="MSG_LOG_HISTORY" xml:space="preserve">
+    <value>로그 내역</value>
+  </data>
+  <data name="MSG_QRCODE_CREATE_ERROR" xml:space="preserve">
+    <value>QR코드번호생성중 예상치않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_QRCODE_CREATE_SUCCESS" xml:space="preserve">
+    <value>QR코드번호생성이 완료되었습니다. &lt;br&gt;&lt;br&gt; 생성한 QR코드목록에서 확인하실수 있습니다.</value>
+  </data>
+  <data name="STR_APPLY_COUNT" xml:space="preserve">
+    <value>적용 가능한 기기 수</value>
+  </data>
+  <data name="STR_AUTHED_QRCODE_LIST" xml:space="preserve">
+    <value>발급한 QR코드목록</value>
+  </data>
+  <data name="STR_CHINESE" xml:space="preserve">
+    <value>중국어</value>
+  </data>
+  <data name="STR_COUNT_PER_PAGE" xml:space="preserve">
+    <value>페지당표시수</value>
+  </data>
+  <data name="STR_CREATE" xml:space="preserve">
+    <value>생성하기</value>
+  </data>
+  <data name="STR_CREATED_QRCODE_LIST" xml:space="preserve">
+    <value>생성한 QR코드목록</value>
+  </data>
+  <data name="STR_CREATE_CONFIRM" xml:space="preserve">
+    <value>생성확인</value>
+  </data>
+  <data name="STR_CREATE_PROCESS" xml:space="preserve">
+    <value>생성 프로세스</value>
+  </data>
+  <data name="STR_CREATOR" xml:space="preserve">
+    <value>발급인</value>
+  </data>
+  <data name="STR_DAY" xml:space="preserve">
+    <value>일</value>
+  </data>
+  <data name="STR_EVENT" xml:space="preserve">
+    <value>이벤트</value>
+  </data>
+  <data name="STR_KOREAN" xml:space="preserve">
+    <value>조선어</value>
+  </data>
+  <data name="STR_LANG_SETTING" xml:space="preserve">
+    <value>언어설정</value>
+  </data>
+  <data name="STR_PRODUCT_TYPE" xml:space="preserve">
+    <value>제품타입</value>
+  </data>
+  <data name="STR_QRCODE_CREATE" xml:space="preserve">
+    <value>QR코드 생성</value>
+  </data>
+  <data name="STR_REAL_PRODUCT" xml:space="preserve">
+    <value>실제품</value>
+  </data>
+  <data name="STR_REG_DATE" xml:space="preserve">
+    <value>등록날자</value>
+  </data>
+  <data name="MSG_SAVE_ALL_LIST" xml:space="preserve">
+    <value>전체 리스트 저장</value>
+  </data>
+  <data name="MSG_SAVE_CURRENT_LIST" xml:space="preserve">
+    <value>현재 표시된 리스트만 저장</value>
+  </data>
+  <data name="STR_SAVE_EXCEL" xml:space="preserve">
+    <value>엑셀로 저장</value>
+  </data>
+  <data name="STR_SEARCH" xml:space="preserve">
+    <value>검 색</value>
+  </data>
+  <data name="STR_SERVER_CONNECT_CYCLE" xml:space="preserve">
+    <value>서버접속주기</value>
+  </data>
+  <data name="STR_STATISTICS" xml:space="preserve">
+    <value>통계현황</value>
+  </data>
+  <data name="STR_TEST_PRODUCT" xml:space="preserve">
+    <value>시험제품</value>
+  </data>
+  <data name="MSG_ALL_LIST" xml:space="preserve">
+    <value>전체 리스트</value>
+  </data>
+  <data name="MSG_CHECKED_LIST" xml:space="preserve">
+    <value>체크된 리스트</value>
+  </data>
+  <data name="MSG_AUTH_REALLY" xml:space="preserve">
+    <value>정말 발급 하시겠습니까?</value>
+  </data>
+  <data name="MSG_CONFIRM_DESCRIPTION" xml:space="preserve">
+    <value>정확히 확인 하신 후 &amp;lt;예&amp;gt;버튼을 눌러주세요.&lt;br&gt;취소하시려면 &amp;lt;아니&amp;gt;버튼을 눌러주세요.</value>
+  </data>
+  <data name="MSG_DELETE_REALLY" xml:space="preserve">
+    <value>정말 삭제 하시겠습니까?</value>
+  </data>
+  <data name="MSG_INPUT_SEARCH_DATESCALE" xml:space="preserve">
+    <value>날짜범위을 정확히 입력해주십시오.</value>
+  </data>
+  <data name="MSG_QRCODE_ALREADY_AUTH" xml:space="preserve">
+    <value>선택하신 QR코드가 이미 발급되였기때문에 수정할수 없습니다.</value>
+  </data>
+  <data name="MSG_QRCODE_AUTH_CHECK" xml:space="preserve">
+    <value>발급할 QR코드번호를 선택해주십시오.</value>
+  </data>
+  <data name="MSG_QRCODE_AUTH_SUCCESS" xml:space="preserve">
+    <value>선택한 시리얼번호가 정확히 발급되였습니다.\n발급한 시리얼 목록에서 확인하실수 있습니다.</value>
+  </data>
+  <data name="MSG_QRCODE_CHANGE_ERROR" xml:space="preserve">
+    <value>QR코드번호수정중 예상치않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_QRCODE_CHANGE_SUCCESS" xml:space="preserve">
+    <value>QR코드번호정보가 정확히 수정되었습니다.</value>
+  </data>
+  <data name="MSG_QRCODE_DELETE_CHECK" xml:space="preserve">
+    <value>삭제할 QR코드번호를 선택해주십시오.</value>
+  </data>
+  <data name="MSG_QRCODE_DELETE_ERROR" xml:space="preserve">
+    <value>QR코드번호삭제중 예상치않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_QRCODE_DELETE_SUCCESS" xml:space="preserve">
+    <value>선택한 QR코드번호가 정확히 삭제되었습니다. &lt;br&gt;&lt;br&gt;</value>
+  </data>
+  <data name="MSG_QRCODE_LISTING_ERROR" xml:space="preserve">
+    <value>QR코드번호정보 조회중 오류가 발생하였습니다.</value>
+  </data>
+  <data name="STR_ALERT" xml:space="preserve">
+    <value>알 림</value>
+  </data>
+  <data name="STR_AUTH" xml:space="preserve">
+    <value>발 급</value>
+  </data>
+  <data name="STR_AUTH_CONFIRM" xml:space="preserve">
+    <value>발급확인</value>
+  </data>
+  <data name="STR_AUTH_DATE" xml:space="preserve">
+    <value>발급날자</value>
+  </data>
+  <data name="STR_CANCEL" xml:space="preserve">
+    <value>취 소</value>
+  </data>
+  <data name="STR_CREATE_DATE" xml:space="preserve">
+    <value>생성날자</value>
+  </data>
+  <data name="STR_DELETE" xml:space="preserve">
+    <value>삭 제</value>
+  </data>
+  <data name="STR_DELETE_CONFIRM" xml:space="preserve">
+    <value>삭제확인</value>
+  </data>
+  <data name="STR_DETAIL" xml:space="preserve">
+    <value>상 세</value>
+  </data>
+  <data name="STR_FIRST_DEVICE_REG_DATE" xml:space="preserve">
+    <value>최초기기등록날자</value>
+  </data>
+  <data name="STR_INFO_CHANGE" xml:space="preserve">
+    <value>정보수정</value>
+  </data>
+  <data name="STR_NO" xml:space="preserve">
+    <value>아 니</value>
+  </data>
+  <data name="STR_QRCODE_NUMBER" xml:space="preserve">
+    <value>QR코드번호</value>
+  </data>
+  <data name="STR_YES" xml:space="preserve">
+    <value>예</value>
+  </data>
+  <data name="MSG_APPLY_COUNT_CONFIRM" xml:space="preserve">
+    <value>적용 가능한 기기 수를 확인해주세요.</value>
+  </data>
+  <data name="MSG_BANNER_ACTIVATED" xml:space="preserve">
+    <value>선택한 배너가 활성화되었습니다.</value>
+  </data>
+  <data name="MSG_BANNER_ADD_SUCCESS" xml:space="preserve">
+    <value>배너를 정확히 추가하였습니다.</value>
+  </data>
+  <data name="MSG_BANNER_ADD_WARNING" xml:space="preserve">
+    <value>배너는 최대 3개까지만 등록가능합니다.</value>
+  </data>
+  <data name="MSG_BANNER_DELETE_ERROR" xml:space="preserve">
+    <value>배너삭제중 예상치않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_BANNER_INFO_ERROR" xml:space="preserve">
+    <value>등록된 배너 조회중 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_BANNER_NO_ACTIVATED" xml:space="preserve">
+    <value>선택한 배너가 비활성화되었습니다.</value>
+  </data>
+  <data name="MSG_BANNER_REG_ERROR" xml:space="preserve">
+    <value>배너이미지 등록과정에 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_CHANGE_DATA_NO_EXIST" xml:space="preserve">
+    <value>수정할 데이터가 존재하지 않습니다.</value>
+  </data>
+  <data name="MSG_CHANGE_ERROR" xml:space="preserve">
+    <value>선택한 배너 수정과정에 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_DATA_ADD" xml:space="preserve">
+    <value>데이터추가</value>
+  </data>
+  <data name="MSG_DATA_ALREADY_REG" xml:space="preserve">
+    <value>데이터가 이미 등록되어 있습니다.</value>
+  </data>
+  <data name="MSG_DATA_CHANGE" xml:space="preserve">
+    <value>데이터수정</value>
+  </data>
+  <data name="MSG_DATA_CHANGE_ERROR" xml:space="preserve">
+    <value>데이터 수정과정에 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_DATA_CHANGE_SUCCESS" xml:space="preserve">
+    <value>데이터를 정확히 수정하였습니다.</value>
+  </data>
+  <data name="MSG_DATA_DELETE_CHECK" xml:space="preserve">
+    <value>삭제할 데이터를 선택해주십시오.</value>
+  </data>
+  <data name="MSG_DATA_DELETE_ERROR" xml:space="preserve">
+    <value>데이터삭제중 예상치않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_DATA_DELETE_SUCCESS" xml:space="preserve">
+    <value>선택한 데이터가 정확히 삭제되었습니다. &lt;br&gt;&lt;br&gt;</value>
+  </data>
+  <data name="MSG_DATA_INFO_ERROR" xml:space="preserve">
+    <value>데이터정보 조회중 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_DATA_REG_ERROR" xml:space="preserve">
+    <value>데이터 등록과정에 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_DATA_REG_SUCCESS" xml:space="preserve">
+    <value>데이터를 정확히 등록하였습니다.</value>
+  </data>
+  <data name="MSG_DEVICE_ACTIVATED" xml:space="preserve">
+    <value>해당 디바이스가 활성화 되었습니다.</value>
+  </data>
+  <data name="MSG_DEVICE_NO_ACTIVATED" xml:space="preserve">
+    <value>해당 디바이스가 비활성화 되었습니다.</value>
+  </data>
+  <data name="MSG_DEVICE_NO_EXIST" xml:space="preserve">
+    <value>적용할 디바이스가 존재하지 않습니다.</value>
+  </data>
+  <data name="MSG_FILE_FORMAT_ERROR" xml:space="preserve">
+    <value>파일형식이 바르지 않습니다.</value>
+  </data>
+  <data name="MSG_FILE_REG_ERROR" xml:space="preserve">
+    <value>데이터파일 업로드과정에 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_FILE_SIZE_ERROR" xml:space="preserve">
+    <value>100MB 이하의 파일만 업로드가능합니다.</value>
+  </data>
+  <data name="MSG_FILE_SIZE_ERROR_5" xml:space="preserve">
+    <value>5MB 이하의 파일만 업로드가능합니다.</value>
+  </data>
+  <data name="MSG_FILE_SIZE_ERROR_512" xml:space="preserve">
+    <value>가로 512픽셀이하 이미지만 업로드가능합니다.</value>
+  </data>
+  <data name="MSG_FILE_SIZE_ERROR_910" xml:space="preserve">
+    <value>세로 910픽셀이하 이미지만 업로드가능합니다.</value>
+  </data>
+  <data name="MSG_INPUT_BANNER_IMAGE" xml:space="preserve">
+    <value>배너이미지를 입력해주십시오.</value>
+  </data>
+  <data name="MSG_INPUT_BANNER_LINK" xml:space="preserve">
+    <value>배너링크를 입력해주십시오.</value>
+  </data>
+  <data name="MSG_INPUT_BANNER_NAME" xml:space="preserve">
+    <value>배너명을 입력해주십시오.</value>
+  </data>
+  <data name="MSG_INPUT_DATA_ID" xml:space="preserve">
+    <value>데이터식별코드를 입력해 주십시오.</value>
+  </data>
+  <data name="MSG_INPUT_DATA_LINK" xml:space="preserve">
+    <value>데이터링크를 등록해 주십시오.</value>
+  </data>
+  <data name="MSG_INPUT_DATA_VERSION" xml:space="preserve">
+    <value>데이터버전을 입력해 주십시오.</value>
+  </data>
+  <data name="MSG_INPUT_MESSAGE_CONTENT" xml:space="preserve">
+    <value>메시지 내용을 입력해주십시오.</value>
+  </data>
+  <data name="MSG_INPUT_SEND_DATE" xml:space="preserve">
+    <value>전송일시를 정확히 입력해주세요.</value>
+  </data>
+  <data name="MSG_INPUT_UPDATE_MEMO" xml:space="preserve">
+    <value>업데이트내용를 입력해주십시오.</value>
+  </data>
+  <data name="MSG_INPUT_UPDATE_VERSION" xml:space="preserve">
+    <value>업데이트버전을 입력해주십시오.</value>
+  </data>
+  <data name="MSG_MEMO_REG_ERROR" xml:space="preserve">
+    <value>메모저장중 예상치않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_MEMO_REG_SUCCESS" xml:space="preserve">
+    <value>메모내용이 정확히 저장되었습니다.</value>
+  </data>
+  <data name="MSG_MESSAGE_SPEC_EXIST" xml:space="preserve">
+    <value>메시지 내용에 특수문자가 들어 있습니다. 다시 입력해주십시오.</value>
+  </data>
+  <data name="MSG_NO_REG_DEVICE" xml:space="preserve">
+    <value>등록된 기기가 없습니다.</value>
+  </data>
+  <data name="MSG_QRCODE_DETAIL_CHANGE_ERROR" xml:space="preserve">
+    <value>QR코드상태 수정중 예상치않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_QRCODE_NO_EXIST" xml:space="preserve">
+    <value>QR코드가 존재하지 않습니다.</value>
+  </data>
+  <data name="MSG_UPDATE_INFO_ADD_SUCCESS" xml:space="preserve">
+    <value>업데이트정보를 정확히 추가하였습니다.</value>
+  </data>
+  <data name="MSG_UPDATE_INFO_DELETE_ERROR" xml:space="preserve">
+    <value>업데이트정보삭제중 예상치않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_UPDATE_INFO_EXIST" xml:space="preserve">
+    <value>입력한 업데이트버전이 이미 존재합니다.</value>
+  </data>
+  <data name="MSG_UPLOAD_WARNING" xml:space="preserve">
+    <value>(주의:파일 업로드시 zip파일만 등록 가능합니다. 용량제한 100M)</value>
+  </data>
+  <data name="STR_ACT" xml:space="preserve">
+    <value>활성화</value>
+  </data>
+  <data name="STR_ACTIVATED" xml:space="preserve">
+    <value>활성화 됨</value>
+  </data>
+  <data name="STR_ALL" xml:space="preserve">
+    <value>전 체</value>
+  </data>
+  <data name="STR_ALL_DEVICE_NUMBER" xml:space="preserve">
+    <value>총 디바이스 수</value>
+  </data>
+  <data name="STR_ALL_REG_DEVICE_NUMBER" xml:space="preserve">
+    <value>전체 기기 등록수</value>
+  </data>
+  <data name="STR_APPLY_DEVICE_INFO" xml:space="preserve">
+    <value>적용 기기 정보</value>
+  </data>
+  <data name="STR_APP_UPDATE" xml:space="preserve">
+    <value>앱 업데이트</value>
+  </data>
+  <data name="STR_AUTH_NUMBER" xml:space="preserve">
+    <value>발급개수</value>
+  </data>
+  <data name="STR_AUTH_STATUS" xml:space="preserve">
+    <value>인증상태</value>
+  </data>
+  <data name="STR_BANNER" xml:space="preserve">
+    <value>배너광고</value>
+  </data>
+  <data name="STR_BANNER_IMAGE" xml:space="preserve">
+    <value>배너이미지</value>
+  </data>
+  <data name="STR_BANNER_LINK" xml:space="preserve">
+    <value>배너링크</value>
+  </data>
+  <data name="STR_BANNER_MANAGE" xml:space="preserve">
+    <value>메인 배너 관리</value>
+  </data>
+  <data name="STR_BANNER_NAME" xml:space="preserve">
+    <value>배너명</value>
+  </data>
+  <data name="STR_BANNER_STATUS" xml:space="preserve">
+    <value>배너상태</value>
+  </data>
+  <data name="STR_BANNER_WARNING" xml:space="preserve">
+    <value>(주의: 가로512픽셀, 세로910픽셀 이하 이미지( JPG, PNG )만 등록 가능합니다.)</value>
+  </data>
+  <data name="STR_BROWSE" xml:space="preserve">
+    <value>browse</value>
+  </data>
+  <data name="STR_BYTE" xml:space="preserve">
+    <value>바이트</value>
+  </data>
+  <data name="STR_CREATE_NUMBER" xml:space="preserve">
+    <value>생성개수</value>
+  </data>
+  <data name="STR_DATA_CLOUD" xml:space="preserve">
+    <value>(클라우드)</value>
+  </data>
+  <data name="STR_DATA_DESCRIPTION" xml:space="preserve">
+    <value>데이터설명</value>
+  </data>
+  <data name="STR_DATA_ID" xml:space="preserve">
+    <value>데이터식별코드</value>
+  </data>
+  <data name="STR_DATA_LINK" xml:space="preserve">
+    <value>데이터링크</value>
+  </data>
+  <data name="STR_DATA_LIST" xml:space="preserve">
+    <value>데이터목록</value>
+  </data>
+  <data name="STR_DATA_MANAGE" xml:space="preserve">
+    <value>데이터관리</value>
+  </data>
+  <data name="STR_DATA_SIZE" xml:space="preserve">
+    <value>데이터용량</value>
+  </data>
+  <data name="STR_DATA_TYPE" xml:space="preserve">
+    <value>데이터타입</value>
+  </data>
+  <data name="STR_DATA_VERSION" xml:space="preserve">
+    <value>데이터버전</value>
+  </data>
+  <data name="STR_DAY_STAT" xml:space="preserve">
+    <value>일간통계</value>
+  </data>
+  <data name="STR_DEVICE_IMEI" xml:space="preserve">
+    <value>IMEI번호</value>
+  </data>
+  <data name="STR_DEVICE_NAME" xml:space="preserve">
+    <value>디바이스명</value>
+  </data>
+  <data name="STR_DEVICE_OS_VERSION" xml:space="preserve">
+    <value>OS버전</value>
+  </data>
+  <data name="STR_FAST_SEND" xml:space="preserve">
+    <value>즉시전송</value>
+  </data>
+  <data name="STR_HOUR" xml:space="preserve">
+    <value>시</value>
+  </data>
+  <data name="STR_LIMIT_10" xml:space="preserve">
+    <value>(10자 제한)</value>
+  </data>
+  <data name="STR_LIMIT_200" xml:space="preserve">
+    <value>(200자 제한)</value>
+  </data>
+  <data name="STR_LIMIT_50" xml:space="preserve">
+    <value>(50자 제한)</value>
+  </data>
+  <data name="STR_MEMO" xml:space="preserve">
+    <value>메 모</value>
+  </data>
+  <data name="STR_MESSAGE_CONTENT" xml:space="preserve">
+    <value>메세지 내용</value>
+  </data>
+  <data name="STR_MINUTE" xml:space="preserve">
+    <value>분</value>
+  </data>
+  <data name="STR_MONTH" xml:space="preserve">
+    <value>월</value>
+  </data>
+  <data name="STR_MONTH_DAY_TIME" xml:space="preserve">
+    <value>윌/일/시</value>
+  </data>
+  <data name="STR_MONTH_STAT" xml:space="preserve">
+    <value>월간통계</value>
+  </data>
+  <data name="STR_NO_ACT" xml:space="preserve">
+    <value>비활성화</value>
+  </data>
+  <data name="STR_NO_ACTIVATED" xml:space="preserve">
+    <value>비활성화 됨</value>
+  </data>
+  <data name="STR_PUSH_ALARM" xml:space="preserve">
+    <value>푸시알람</value>
+  </data>
+  <data name="STR_PUSH_LIST" xml:space="preserve">
+    <value>PUSH 알림 내역</value>
+  </data>
+  <data name="STR_PUSH_SEND" xml:space="preserve">
+    <value>푸시 보내기</value>
+  </data>
+  <data name="STR_QRCODE_INFO" xml:space="preserve">
+    <value>QR코드정보</value>
+  </data>
+  <data name="STR_REG_DEVICE_COUNT" xml:space="preserve">
+    <value>등록된 기기수</value>
+  </data>
+  <data name="STR_SAVE" xml:space="preserve">
+    <value>저 장</value>
+  </data>
+  <data name="STR_SCALE_SETTING" xml:space="preserve">
+    <value>범위설정</value>
+  </data>
+  <data name="STR_SEND" xml:space="preserve">
+    <value>보내기</value>
+  </data>
+  <data name="STR_SENDED_DEVICE_NUMBER" xml:space="preserve">
+    <value>보낸 디바이스 수</value>
+  </data>
+  <data name="STR_SEND_DATE" xml:space="preserve">
+    <value>발송일자</value>
+  </data>
+  <data name="STR_SLOW_SEND" xml:space="preserve">
+    <value>예약전송</value>
+  </data>
+  <data name="STR_STAT" xml:space="preserve">
+    <value>통 계</value>
+  </data>
+  <data name="STR_STATUS" xml:space="preserve">
+    <value>상 태</value>
+  </data>
+  <data name="STR_SUM" xml:space="preserve">
+    <value>합 계</value>
+  </data>
+  <data name="STR_UPDATE_INFO" xml:space="preserve">
+    <value>업데이트내역</value>
+  </data>
+  <data name="STR_UPDATE_VERSION" xml:space="preserve">
+    <value>업데이트버전</value>
+  </data>
+  <data name="STR_USED_QRCODE_NUMBER" xml:space="preserve">
+    <value>사용한 QR코드 수</value>
+  </data>
+  <data name="STR_YEAR" xml:space="preserve">
+    <value>년</value>
+  </data>
+  <data name="STR_YEAR_STAT" xml:space="preserve">
+    <value>년간통계</value>
+  </data>
+  <data name="STR_MESSAGE_TITLE" xml:space="preserve">
+    <value>메세지 타이틀</value>
+  </data>
+  <data name="MSG_INPUT_MESSAGE_TITLE" xml:space="preserve">
+    <value>메시지 타이틀을 입력해주십시오.</value>
+  </data>
+  <data name="MSG_QRCODE_SAVE_CHECK" xml:space="preserve">
+    <value>xls파일로 인쇄할 QR코드번호를 선택해주십시오.</value>
+  </data>
+  <data name="STR_DOWNLOAD_EXCEL" xml:space="preserve">
+    <value>엑셀로 다운로드</value>
+  </data>
+  <data name="STR_SAVE_CONFIRM" xml:space="preserve">
+    <value>저장확인</value>
+  </data>
+</root>

@@ -1,0 +1,4 @@
+P:\Retro\Retro\Web\DataAccess\bin\Release\DataAccess.dll
+P:\Retro\Retro\Web\DataAccess\bin\Release\DataAccess.pdb
+P:\Retro\Retro\Web\DataAccess\obj\Release\DataAccess.dll
+P:\Retro\Retro\Web\DataAccess\obj\Release\DataAccess.pdb

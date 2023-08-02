@@ -1,0 +1,9 @@
+﻿2016년08월31일 11:09:30 -> 디비서버 접속중...
+2016년08월31일 11:09:30 -> 디비서버 접속이 성공되었습니다.
+2016년08월31일 11:09:31 -> 서비스를 시작합니다.
+2016년08월31일 11:21:31 -> 예약된 푸시알림 발송중 예외가 발생하였습니다. 예외종류: Column 'msg_title' does not belong to table Table. 상세설명:    at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at DataAccess.DataSetUtil.RowStringValue(DataSet ds, String col, Int32 row)
+   at ArGateway.PushAlarmServer.MonitoringPushAlarm() in P:\항주AR\PushServer\GameServer\PushAlarmServer.cs:line 153
+2016년08월31일 11:21:37 -> 서비스를 중지합니다.
+2016년08월31일 11:21:38 -> 서비스를 시작합니다.

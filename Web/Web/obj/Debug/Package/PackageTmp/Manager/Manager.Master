@@ -1,0 +1,274 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Manager.master.cs" Inherits="Web.Manager.Manager" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><%=Resources.Lang.STR_TITLE %></title>
+    <script language="javascript" type="text/javascript" src="/Scripts/jquery-1.11.2.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/Scripts/calendar.js"></script>
+    <script language="javascript" type="text/javascript" src="/Scripts/shirtAR.js"></script>
+
+    <script language="javascript" type="text/javascript" src="/Scripts/jquery.qrcode.js"></script>
+    <script language="javascript" type="text/javascript" src="/Scripts/qrcode.js"></script>
+
+    <script language="javascript" type="text/javascript">
+        function changePWD() {
+            if ($("#<%=div_txt_LoginPWD.ClientID %>").val() == "") {
+                alert("변경할 패스워드를 입력하십시오.");
+                return;
+            }
+
+            if ($("#<%=div_txt_LoginConfirmPWD.ClientID %>").val() == "") {
+                alert("확인 패스워드를 입력하십시오.");
+                return;
+            }
+
+            if ($("#<%=div_txt_LoginPWD.ClientID %>").val() != $("#<%=div_txt_LoginConfirmPWD.ClientID %>").val()) {
+                alert("입력하신 확인패스워드가 일치하지 않습니다.");
+                return;
+            }
+
+            showProgress();
+            $.ajax({
+                url: "ChangePWD.aspx?pwd=" + encodeURIComponent($("#<%=div_txt_LoginPWD.ClientID %>").val()),
+                dataType: 'text',
+                async: true,
+                type: 'POST',
+                success: function (data) {
+                    if (data == "0") {
+                        alert("암호를 정확히 변경하였습니다.");
+                        closePopup();
+                        return;
+                    }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert("암호를 변경하던중 예상치않은 오류가 발생하였습니다.");
+                    closePopup();
+                    return;
+                }
+            });
+        }
+    </script>
+
+    <link href="/Styles/calendar.css" rel="stylesheet" type="text/css" />
+    <link href="/Styles/shirtAR.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#5c6273">
+            <tr>
+                <td width="100%" valign="top">
+                    <table cellpadding="0" cellspacing="0" width="1430" align="center">
+                        <tr>
+                            <td width="30" valign="top" bgcolor="#42485a">
+                                <table cellpadding="0" cellspacing="0" width="30">
+                                    <tr>
+                                        <td width="20" height="29" bgcolor="#5c6273">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="20" height="31">&nbsp;</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="1400" valign="top">
+                                <table cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td height="50" bgcolor="whitesmoke">
+                                            <table cellpadding="0" cellspacing="0" align="center">
+                                                <tr>
+                                                    <td width="900" height="40">
+                                                        <a href="#" style="text-decoration:none;">
+                                                            <span style="margin-left:30pt; font-size:12pt; color:#42485a;"><%=Resources.Lang.STR_TITLE %></span><sup><span style="font-size:10pt; color:#42485a;">&nbsp;beta</span></sup>
+                                                        </a>
+                                                    </td>
+                                                    <td width="500" height="40" align="right">
+                                                        <table cellpadding="0" cellspacing="0" width="250">
+                                                            <tr>
+                                                                <td width="120" height="32">
+                                                                    <input type="button" class="btnTop" onclick="showPopupPWD()" value="<%=Resources.Lang.STR_SETTING %>" style="width:100px; height:32px;"/>
+                                                                </td>
+                                                                <td width="120" height="32">
+                                                                    <input type="button" class="btnTop" onclick="logout()" value="<%=Resources.Lang.STR_LOGOUT %>" style="width:100px; height:32px;"/>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table cellpadding="0" cellspacing="0" width="1400" align="center" bgcolor="#42485a">
+                                    <tr>
+                                        <td width="1400" height="64">
+                                            <table cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td>
+                                                        <input id="mainMenu1" type="button" class="btnMainMenu" onclick="window.location='QRCodeCreate.aspx';" value="<%=Resources.Lang.STR_QRCODE_MANAGE %>"/>
+                                                    </td>
+                                                    <td>
+                                                        <input id="mainMenu2" type="button" class="btnMainMenu" onclick="window.location='DataManager.aspx';" value="<%=Resources.Lang.STR_APP_SETTING %>"/>
+                                                    </td>
+                                                    <td>
+                                                        <input id="mainMenu3" type="button" class="btnMainMenu" onclick="window.location='MyAccount.aspx';" value="<%=Resources.Lang.STR_ACCOUNT_MANAGE %>"/>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table cellpadding="0" cellspacing="0" width="1400" align="center" bgcolor="#FBFBF9" style="border-collapse:collapse;">
+                                    <tr>
+                                        <td>
+                                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30" height="30" bgcolor="#42485a"></td>
+                            <td width="1400" height="30" bgcolor="#42485a">
+                                <div align="right">
+                                    <table cellpadding="0" cellspacing="0">
+                                        <tr><td width="30" height="30" bgcolor="#5c6273"></td></tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table cellpadding="0" cellspacing="0" align="center">
+                        <tr>
+                            <td width="1430" height="70" bgcolor="#5c6273" align="right">
+                                <span style="font-size:10pt;"><font color="#FFFFFF">Copyright ⓒ 2016 AR Team All Right Reserved.</font></span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <div class="clspopup" id="progress_div" >
+            <img src="/img/ajax-loader.gif" alt="" />
+        </div>
+        <div id="popBack"></div>
+        <div class="clspopup" id="divPopupAlert">
+            <table cellpadding="0" cellspacing="0" width="560" background="/img/pop_bg3.png">
+                <tr>
+                    <td width="560" height="337" valign="top">
+                        <table cellpadding="0" cellspacing="0" width="470" align="center">
+                            <tr>
+                                <td width="470" height="71">
+                                    <table cellpadding="0" cellspacing="0" width="477" align="center">
+                                        <tr>
+                                            <td width="306" height="31">
+                                                <span style="font-size:12pt; font-weight:bold; color:White;">&nbsp;<label id="lbl_title"></label></span>
+                                            </td>
+                                            <td width="171" height="31" align="right">
+                                                <img src="/img/bt_close.png" width="22" height="22" border="0" alt="" onclick="confirm()" style="cursor:pointer;" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="470" height="241">
+                                    <table cellpadding="0" cellspacing="0" align="center" width="409">
+                                        <tr>
+                                            <td width="409" height="166" align="center">                                    
+                                                <span style="font-size:11pt; color:#666666;"><label id="lbl_message"></label></span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table cellpadding="0" cellspacing="0" width="286" align="center">
+                                        <tr>
+                                            <td width="286" height="63" align="center">
+                                                <input type="button" class="btnMiddle" onclick="confirm()" value="<%=Resources.Lang.STR_CONFIRM %>" style="width:100px; height:32px;"/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="clspopup" id="divChangePWD">
+            <table cellpadding="0" cellspacing="0" width="687" background="/img/pop_bg2.png">
+                <tr>
+                    <td width="687" height="405" valign="top">
+                        <table cellpadding="0" cellspacing="0" width="655" align="center">
+                            <tr>
+                                <td width="655" height="70">
+                                    <table cellpadding="0" cellspacing="0" width="624" align="center">
+                                        <tr>
+                                            <td width="416" height="31">
+                                                <span style="color:White; font-size:12pt; font-weight:bold;"><%=Resources.Lang.STR_PASSWORD_CHANGE %></span>
+                                            </td>
+                                            <td width="208" height="31" align="right">
+                                                <img src="/img/bt_close.png" width="22" height="22" border="0" alt="" onclick="closePopup()" style="cursor:pointer;"/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="655" height="30"></td>
+                            </tr>
+                            <tr>
+                                <td width="655" height="300" valign="top">
+                                    <table cellpadding="0" cellspacing="0" align="center" width="497">
+                                        <tr>
+                                            <td width="167" height="50">                                    
+                                                <span style="font-size:11pt; color:#666666;"><%=Resources.Lang.STR_NICKNAME%></span>
+                                            </td>
+                                            <td width="330" height="50">
+                                                <span style="font-size:11pt; color:#666666;"><asp:Label ID="div_lbl_Nickname" runat="server"></asp:Label></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="167" height="50">
+                                                <span style="font-size:11pt; color:#666666;"><%=Resources.Lang.STR_LOGINID%></span>
+                                            </td>
+                                            <td width="330" height="50">
+                                                <span style="font-size:11pt; color:#666666;"><asp:Label ID="div_lbl_LoginID" runat="server"></asp:Label></span>                                   
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="167" height="50">
+                                                <span style="font-size:11pt; color:#666666;"><%=Resources.Lang.STR_PASSWORD%></span>
+                                            </td>
+                                            <td width="330" height="50">
+                                                <font color="#666666"><asp:TextBox ID="div_txt_LoginPWD" TextMode="Password" runat="server" Text="" Width="320" MaxLength="100"></asp:TextBox></font>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="167" height="50">
+                                                <span style="font-size:11pt; color:#666666;"><%=Resources.Lang.STR_PASSWORD_CONFIRM%></span>
+                                            </td>
+                                            <td width="330" height="50">
+                                                <font color="#666666"><asp:TextBox ID="div_txt_LoginConfirmPWD" TextMode="Password" runat="server" Text="" Width="320" MaxLength="100"></asp:TextBox></font>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table cellpadding="0" cellspacing="0" width="290" align="center">
+                                        <tr>
+                                            <td width="290" height="70" align="center">
+                                                <input type="button" class="btnMiddle" onclick="changePWD()" value="<%=Resources.Lang.STR_CHANGE %>" style="width:100px; height:32px;"/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

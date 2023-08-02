@@ -1,0 +1,798 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MSG_ACCOUNT_CHANGE_ERROR" xml:space="preserve">
+    <value>계정정보를 변경하던중 예상치않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_ACCOUNT_CHANGE_SUCCESS" xml:space="preserve">
+    <value>계정정보를 정확히 변경하였습니다.</value>
+  </data>
+  <data name="MSG_ACCOUNT_REG_ERROR" xml:space="preserve">
+    <value>계정등록중 예상치않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_ACCOUNT_REG_SUCCESS" xml:space="preserve">
+    <value>正确注册！</value>
+  </data>
+  <data name="MSG_ADMIN_ACEPT_ONLY" xml:space="preserve">
+    <value>最高管理者就可以接近。</value>
+  </data>
+  <data name="MSG_ALL_LIST" xml:space="preserve">
+    <value>全体目录</value>
+  </data>
+  <data name="MSG_APPLY_COUNT_CONFIRM" xml:space="preserve">
+    <value>二维码的激活次数请确认吧。</value>
+  </data>
+  <data name="MSG_AUTH_REALLY" xml:space="preserve">
+    <value>确定要发给马？</value>
+  </data>
+  <data name="MSG_BANNER_ACTIVATED" xml:space="preserve">
+    <value>选择的横幅活性化。</value>
+  </data>
+  <data name="MSG_BANNER_ADD_SUCCESS" xml:space="preserve">
+    <value>准确地增加了横幅。</value>
+  </data>
+  <data name="MSG_BANNER_ADD_WARNING" xml:space="preserve">
+    <value>最多为3个横幅,可以注册。</value>
+  </data>
+  <data name="MSG_BANNER_DELETE_ERROR" xml:space="preserve">
+    <value>意外中删除标题的错误。</value>
+  </data>
+  <data name="MSG_BANNER_INFO_ERROR" xml:space="preserve">
+    <value>등록된 배너 조회중 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_BANNER_NO_ACTIVATED" xml:space="preserve">
+    <value>选择的横幅非活性化。</value>
+  </data>
+  <data name="MSG_BANNER_REG_ERROR" xml:space="preserve">
+    <value>배너이미지 등록과정에 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_CHANGE_DATA_NO_EXIST" xml:space="preserve">
+    <value>수정할 데이터가 존재하지 않습니다.</value>
+  </data>
+  <data name="MSG_CHANGE_ERROR" xml:space="preserve">
+    <value>선택한 배너 수정과정에 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_CHECKED_LIST" xml:space="preserve">
+    <value>选中的目录</value>
+  </data>
+  <data name="MSG_CONFIG_SET_ERROR" xml:space="preserve">
+    <value>환경설정과정에 예상치않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_CONFIG_SET_SUCCESS" xml:space="preserve">
+    <value>正确配置！</value>
+  </data>
+  <data name="MSG_CONFIRM_DESCRIPTION" xml:space="preserve">
+    <value>确认后，请点击&amp;lt;是&amp;gt;按钮吧.&lt;br&gt;如果取消，请点击&amp;lt;否&amp;gt;按钮吧.</value>
+  </data>
+  <data name="MSG_DATA_ADD" xml:space="preserve">
+    <value>数据追加</value>
+  </data>
+  <data name="MSG_DATA_ALREADY_REG" xml:space="preserve">
+    <value>数据已登记的。</value>
+  </data>
+  <data name="MSG_DATA_CHANGE" xml:space="preserve">
+    <value>数据删改</value>
+  </data>
+  <data name="MSG_DATA_CHANGE_ERROR" xml:space="preserve">
+    <value>데이터 수정과정에 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_DATA_CHANGE_SUCCESS" xml:space="preserve">
+    <value>데이터를 정확히 수정하였습니다.</value>
+  </data>
+  <data name="MSG_DATA_DELETE_CHECK" xml:space="preserve">
+    <value>请删除的APP数据选择吧。</value>
+  </data>
+  <data name="MSG_DATA_DELETE_ERROR" xml:space="preserve">
+    <value>데이터삭제중 예상치않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_DATA_DELETE_SUCCESS" xml:space="preserve">
+    <value>선택한 데이터가 정확히 삭제되었습니다. &lt;br&gt;&lt;br&gt;</value>
+  </data>
+  <data name="MSG_DATA_INFO_ERROR" xml:space="preserve">
+    <value>데이터정보 조회중 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_DATA_REG_ERROR" xml:space="preserve">
+    <value>데이터 등록과정에 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_DATA_REG_SUCCESS" xml:space="preserve">
+    <value>데이터를 정확히 등록하였습니다.</value>
+  </data>
+  <data name="MSG_DELETE_REALLY" xml:space="preserve">
+    <value>确定要删除马？</value>
+  </data>
+  <data name="MSG_DEVICE_ACTIVATED" xml:space="preserve">
+    <value>해당 디바이스가 활성화 되었습니다.</value>
+  </data>
+  <data name="MSG_DEVICE_NO_ACTIVATED" xml:space="preserve">
+    <value>해당 디바이스가 비활성화 되었습니다.</value>
+  </data>
+  <data name="MSG_DEVICE_NO_EXIST" xml:space="preserve">
+    <value>적용할 디바이스가 존재하지 않습니다.</value>
+  </data>
+  <data name="MSG_EXIST_LOGINID" xml:space="preserve">
+    <value>이미 등록된 아이디입니다.</value>
+  </data>
+  <data name="MSG_EXIST_NICKNAME" xml:space="preserve">
+    <value>등록자명이 중복되였습니다.</value>
+  </data>
+  <data name="MSG_FILE_FORMAT_ERROR" xml:space="preserve">
+    <value>파일형식이 바르지 않습니다.</value>
+  </data>
+  <data name="MSG_FILE_REG_ERROR" xml:space="preserve">
+    <value>데이터파일 업로드과정에 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_FILE_SIZE_ERROR" xml:space="preserve">
+    <value>100MB 이하의 파일만 업로드가능합니다.</value>
+  </data>
+  <data name="MSG_FILE_SIZE_ERROR_5" xml:space="preserve">
+    <value>5MB 이하의 파일만 업로드가능합니다.</value>
+  </data>
+  <data name="MSG_FILE_SIZE_ERROR_512" xml:space="preserve">
+    <value>가로 512픽셀이하 이미지만 업로드가능합니다.</value>
+  </data>
+  <data name="MSG_FILE_SIZE_ERROR_910" xml:space="preserve">
+    <value>세로 910픽셀이하 이미지만 업로드가능합니다.</value>
+  </data>
+  <data name="MSG_INPUT_BANNER_IMAGE" xml:space="preserve">
+    <value>배너이미지를 입력해주십시오.</value>
+  </data>
+  <data name="MSG_INPUT_BANNER_LINK" xml:space="preserve">
+    <value>배너링크를 입력해주십시오.</value>
+  </data>
+  <data name="MSG_INPUT_BANNER_NAME" xml:space="preserve">
+    <value>배너명을 입력해주십시오.</value>
+  </data>
+  <data name="MSG_INPUT_CHANGE_PASSWORD" xml:space="preserve">
+    <value>변경할 패스워드를 입력하십시오.</value>
+  </data>
+  <data name="MSG_INPUT_DATA_ID" xml:space="preserve">
+    <value>데이터식별코드를 입력해 주십시오.</value>
+  </data>
+  <data name="MSG_INPUT_DATA_LINK" xml:space="preserve">
+    <value>데이터링크를 등록해 주십시오.</value>
+  </data>
+  <data name="MSG_INPUT_DATA_VERSION" xml:space="preserve">
+    <value>데이터버전을 입력해 주십시오.</value>
+  </data>
+  <data name="MSG_INPUT_LOGINID" xml:space="preserve">
+    <value>请输入注册ID吧！</value>
+  </data>
+  <data name="MSG_INPUT_MESSAGE_CONTENT" xml:space="preserve">
+    <value>메시지 내용을 입력해주십시오.</value>
+  </data>
+  <data name="MSG_INPUT_MESSAGE_TITLE" xml:space="preserve">
+    <value>메시지 타이틀을 입력해주십시오.</value>
+  </data>
+  <data name="MSG_INPUT_NICKNAME" xml:space="preserve">
+    <value>请输入注册名吧！</value>
+  </data>
+  <data name="MSG_INPUT_PASSWORD" xml:space="preserve">
+    <value>请输入密码吧！</value>
+  </data>
+  <data name="MSG_INPUT_PASSWORD_CONFIRM" xml:space="preserve">
+    <value>请输入密码再输入吧！</value>
+  </data>
+  <data name="MSG_INPUT_PASSWORD_ERROR" xml:space="preserve">
+    <value>密码不一致!</value>
+  </data>
+  <data name="MSG_INPUT_SEARCH_DATESCALE" xml:space="preserve">
+    <value>날짜범위을 정확히 입력해주십시오.</value>
+  </data>
+  <data name="MSG_INPUT_SEARCH_STRING" xml:space="preserve">
+    <value>请输入检索文字列吧！</value>
+  </data>
+  <data name="MSG_INPUT_SEND_DATE" xml:space="preserve">
+    <value>전송일시를 정확히 입력해주세요.</value>
+  </data>
+  <data name="MSG_INPUT_UPDATE_MEMO" xml:space="preserve">
+    <value>업데이트내용를 입력해주십시오.</value>
+  </data>
+  <data name="MSG_INPUT_UPDATE_VERSION" xml:space="preserve">
+    <value>업데이트버전을 입력해주십시오.</value>
+  </data>
+  <data name="MSG_LOGINID_EXIST_SPEC" xml:space="preserve">
+    <value>注册ID特殊文字输入不可能！</value>
+  </data>
+  <data name="MSG_LOG_HISTORY" xml:space="preserve">
+    <value>记录明细</value>
+  </data>
+  <data name="MSG_MEMO_REG_ERROR" xml:space="preserve">
+    <value>메모저장중 예상치않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_MEMO_REG_SUCCESS" xml:space="preserve">
+    <value>记录正确保存了。</value>
+  </data>
+  <data name="MSG_MESSAGE_SPEC_EXIST" xml:space="preserve">
+    <value>메시지 내용에 특수문자가 들어 있습니다. 다시 입력해주십시오.</value>
+  </data>
+  <data name="MSG_NICKNAME_EXIST_SPEC" xml:space="preserve">
+    <value>注册名特殊文字输入不可能！</value>
+  </data>
+  <data name="MSG_NO_REG_DEVICE" xml:space="preserve">
+    <value>登记的手机没有。</value>
+  </data>
+  <data name="MSG_QRCODE_ALREADY_AUTH" xml:space="preserve">
+    <value>선택하신 QR코드가 이미 발급되였기때문에 수정할수 없습니다.</value>
+  </data>
+  <data name="MSG_QRCODE_AUTH_CHECK" xml:space="preserve">
+    <value>발급할 QR코드번호를 선택해주십시오.</value>
+  </data>
+  <data name="MSG_QRCODE_AUTH_SUCCESS" xml:space="preserve">
+    <value>선택한 시리얼번호가 정확히 발급되였습니다.\n발급한 시리얼 목록에서 확인하실수 있습니다.</value>
+  </data>
+  <data name="MSG_QRCODE_CHANGE_ERROR" xml:space="preserve">
+    <value>QR코드번호수정중 예상치않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_QRCODE_CHANGE_SUCCESS" xml:space="preserve">
+    <value>QR코드번호정보가 정확히 수정되었습니다.</value>
+  </data>
+  <data name="MSG_QRCODE_CREATE_ERROR" xml:space="preserve">
+    <value>QR코드번호생성중 예상치않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_QRCODE_CREATE_SUCCESS" xml:space="preserve">
+    <value>二维码生成完了。&lt;br&gt;&lt;br&gt;在生成的二维码表请确认一下吧。</value>
+  </data>
+  <data name="MSG_QRCODE_DELETE_CHECK" xml:space="preserve">
+    <value>삭제할 QR코드번호를 선택해주십시오.</value>
+  </data>
+  <data name="MSG_QRCODE_DELETE_ERROR" xml:space="preserve">
+    <value>QR코드번호삭제중 예상치않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_QRCODE_DELETE_SUCCESS" xml:space="preserve">
+    <value>선택한 QR코드번호가 정확히 삭제되었습니다. &lt;br&gt;&lt;br&gt;</value>
+  </data>
+  <data name="MSG_QRCODE_DETAIL_CHANGE_ERROR" xml:space="preserve">
+    <value>QR코드상태 수정중 예상치않은 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_QRCODE_LISTING_ERROR" xml:space="preserve">
+    <value>QR코드번호정보 조회중 오류가 발생하였습니다.</value>
+  </data>
+  <data name="MSG_QRCODE_NO_EXIST" xml:space="preserve">
+    <value>二维码不存在。</value>
+  </data>
+  <data name="MSG_QRCODE_SAVE_CHECK" xml:space="preserve">
+    <value>打印到文件xls文件二维码选择吧。</value>
+  </data>
+  <data name="MSG_SAVE_ALL_LIST" xml:space="preserve">
+    <value>全体目录</value>
+  </data>
+  <data name="MSG_SAVE_CURRENT_LIST" xml:space="preserve">
+    <value>显示的目录</value>
+  </data>
+  <data name="MSG_UPDATE_INFO_ADD_SUCCESS" xml:space="preserve">
+    <value>更新信息,准确地增加了。</value>
+  </data>
+  <data name="MSG_UPDATE_INFO_DELETE_ERROR" xml:space="preserve">
+    <value>删除预期中的信息更新的错误。</value>
+  </data>
+  <data name="MSG_UPDATE_INFO_EXIST" xml:space="preserve">
+    <value>您输入的更新版本已存在。</value>
+  </data>
+  <data name="MSG_UPLOAD_WARNING" xml:space="preserve">
+    <value>(注意: 就zip文件可能上传. 用量限制 100M)</value>
+  </data>
+  <data name="STR_ACCOUNT_ADD" xml:space="preserve">
+    <value>账户追加</value>
+  </data>
+  <data name="STR_ACCOUNT_CHANGE" xml:space="preserve">
+    <value>账户删改</value>
+  </data>
+  <data name="STR_ACCOUNT_LEVEL" xml:space="preserve">
+    <value>账户权限</value>
+  </data>
+  <data name="STR_ACCOUNT_LIST" xml:space="preserve">
+    <value>账户目录</value>
+  </data>
+  <data name="STR_ACCOUNT_MANAGE" xml:space="preserve">
+    <value>账户管理</value>
+  </data>
+  <data name="STR_ACT" xml:space="preserve">
+    <value>活性化</value>
+  </data>
+  <data name="STR_ACTIVATED" xml:space="preserve">
+    <value>活性话了</value>
+  </data>
+  <data name="STR_ADD" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="STR_ADMINISTRATOR" xml:space="preserve">
+    <value>最高管理者</value>
+  </data>
+  <data name="STR_ALERT" xml:space="preserve">
+    <value>通知</value>
+  </data>
+  <data name="STR_ALL" xml:space="preserve">
+    <value>全体</value>
+  </data>
+  <data name="STR_ALL_DEVICE_NUMBER" xml:space="preserve">
+    <value>全体手机个数</value>
+  </data>
+  <data name="STR_ALL_REG_DEVICE_NUMBER" xml:space="preserve">
+    <value>全体登记的手机个数</value>
+  </data>
+  <data name="STR_APPLY_COUNT" xml:space="preserve">
+    <value>二维码的激活次数</value>
+  </data>
+  <data name="STR_APPLY_DEVICE_INFO" xml:space="preserve">
+    <value>手机登记情报</value>
+  </data>
+  <data name="STR_APP_SETTING" xml:space="preserve">
+    <value>APP配置</value>
+  </data>
+  <data name="STR_APP_UPDATE" xml:space="preserve">
+    <value>APP 更新</value>
+  </data>
+  <data name="STR_AUTH" xml:space="preserve">
+    <value>发给</value>
+  </data>
+  <data name="STR_AUTHED_QRCODE_LIST" xml:space="preserve">
+    <value>发给的二维码目录</value>
+  </data>
+  <data name="STR_AUTH_CONFIRM" xml:space="preserve">
+    <value>发给确认</value>
+  </data>
+  <data name="STR_AUTH_DATE" xml:space="preserve">
+    <value>发给日</value>
+  </data>
+  <data name="STR_AUTH_NUMBER" xml:space="preserve">
+    <value>发给个数</value>
+  </data>
+  <data name="STR_AUTH_STATUS" xml:space="preserve">
+    <value>认证情况</value>
+  </data>
+  <data name="STR_BANNER" xml:space="preserve">
+    <value>网幅广告</value>
+  </data>
+  <data name="STR_BANNER_IMAGE" xml:space="preserve">
+    <value>网幅图片</value>
+  </data>
+  <data name="STR_BANNER_LINK" xml:space="preserve">
+    <value>网幅链接</value>
+  </data>
+  <data name="STR_BANNER_MANAGE" xml:space="preserve">
+    <value>网幅广告</value>
+  </data>
+  <data name="STR_BANNER_NAME" xml:space="preserve">
+    <value>网幅名</value>
+  </data>
+  <data name="STR_BANNER_STATUS" xml:space="preserve">
+    <value>网幅情况</value>
+  </data>
+  <data name="STR_BANNER_WARNING" xml:space="preserve">
+    <value>(注意: 横 512像素, 竖 910像素以下 图片可以上传.)</value>
+  </data>
+  <data name="STR_BROWSE" xml:space="preserve">
+    <value>browse</value>
+  </data>
+  <data name="STR_BYTE" xml:space="preserve">
+    <value>字节</value>
+  </data>
+  <data name="STR_CANCEL" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="STR_CHANGE" xml:space="preserve">
+    <value>删改</value>
+  </data>
+  <data name="STR_CHINESE" xml:space="preserve">
+    <value>汉语</value>
+  </data>
+  <data name="STR_CONFIRM" xml:space="preserve">
+    <value>确认</value>
+  </data>
+  <data name="STR_COUNT_PER_PAGE" xml:space="preserve">
+    <value>各页面显示数量</value>
+  </data>
+  <data name="STR_CREATE" xml:space="preserve">
+    <value>生成</value>
+  </data>
+  <data name="STR_CREATED_QRCODE_LIST" xml:space="preserve">
+    <value>生成的二维码目录</value>
+  </data>
+  <data name="STR_CREATE_CONFIRM" xml:space="preserve">
+    <value>生成确认</value>
+  </data>
+  <data name="STR_CREATE_DATE" xml:space="preserve">
+    <value>生成日</value>
+  </data>
+  <data name="STR_CREATE_NUMBER" xml:space="preserve">
+    <value>生成个数</value>
+  </data>
+  <data name="STR_CREATE_PROCESS" xml:space="preserve">
+    <value>生成进程</value>
+  </data>
+  <data name="STR_CREATOR" xml:space="preserve">
+    <value>发给人</value>
+  </data>
+  <data name="STR_DATA_CLOUD" xml:space="preserve">
+    <value>(云盘)</value>
+  </data>
+  <data name="STR_DATA_DESCRIPTION" xml:space="preserve">
+    <value>数据说明</value>
+  </data>
+  <data name="STR_DATA_ID" xml:space="preserve">
+    <value>数据标识代码</value>
+  </data>
+  <data name="STR_DATA_LINK" xml:space="preserve">
+    <value>数据链接</value>
+  </data>
+  <data name="STR_DATA_LIST" xml:space="preserve">
+    <value>数据目录</value>
+  </data>
+  <data name="STR_DATA_MANAGE" xml:space="preserve">
+    <value>数据管理</value>
+  </data>
+  <data name="STR_DATA_SIZE" xml:space="preserve">
+    <value>数据大小</value>
+  </data>
+  <data name="STR_DATA_TYPE" xml:space="preserve">
+    <value>数据型</value>
+  </data>
+  <data name="STR_DATA_VERSION" xml:space="preserve">
+    <value>数据版本</value>
+  </data>
+  <data name="STR_DAY" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="STR_DAY_STAT" xml:space="preserve">
+    <value>日间统计</value>
+  </data>
+  <data name="STR_DELETE" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="STR_DELETE_CONFIRM" xml:space="preserve">
+    <value>删除确认</value>
+  </data>
+  <data name="STR_DETAIL" xml:space="preserve">
+    <value>详细</value>
+  </data>
+  <data name="STR_DEVICE_IMEI" xml:space="preserve">
+    <value>IMEI号码</value>
+  </data>
+  <data name="STR_DEVICE_NAME" xml:space="preserve">
+    <value>手机名</value>
+  </data>
+  <data name="STR_DEVICE_OS_VERSION" xml:space="preserve">
+    <value>OS版本</value>
+  </data>
+  <data name="STR_DOWNLOAD_EXCEL" xml:space="preserve">
+    <value>下传</value>
+  </data>
+  <data name="STR_ENV_SETTING" xml:space="preserve">
+    <value>环境配置</value>
+  </data>
+  <data name="STR_EVENT" xml:space="preserve">
+    <value>活动</value>
+  </data>
+  <data name="STR_FAST_SEND" xml:space="preserve">
+    <value>及时发送</value>
+  </data>
+  <data name="STR_FIRST_DEVICE_REG_DATE" xml:space="preserve">
+    <value>最初手机登记日</value>
+  </data>
+  <data name="STR_GAE" xml:space="preserve">
+    <value>个</value>
+  </data>
+  <data name="STR_HOUR" xml:space="preserve">
+    <value>时</value>
+  </data>
+  <data name="STR_INFO_CHANGE" xml:space="preserve">
+    <value>情报删改</value>
+  </data>
+  <data name="STR_KOREAN" xml:space="preserve">
+    <value>朝鲜语</value>
+  </data>
+  <data name="STR_LANG_SETTING" xml:space="preserve">
+    <value>语言设置</value>
+  </data>
+  <data name="STR_LICENSER" xml:space="preserve">
+    <value>License管理者</value>
+  </data>
+  <data name="STR_LIMIT_10" xml:space="preserve">
+    <value>(10字 限制)</value>
+  </data>
+  <data name="STR_LIMIT_200" xml:space="preserve">
+    <value>(200字 限制)</value>
+  </data>
+  <data name="STR_LIMIT_50" xml:space="preserve">
+    <value>(50字 限制)</value>
+  </data>
+  <data name="STR_LOGIN" xml:space="preserve">
+    <value>注册</value>
+  </data>
+  <data name="STR_LOGINID" xml:space="preserve">
+    <value>注册ID</value>
+  </data>
+  <data name="STR_LOGIN_AUTOLOGIN" xml:space="preserve">
+    <value>自动注册</value>
+  </data>
+  <data name="STR_LOGIN_ID" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="STR_LOGIN_IDSAVE" xml:space="preserve">
+    <value>用户保存</value>
+  </data>
+  <data name="STR_LOGIN_LOGO" xml:space="preserve">
+    <value>/img/logo_cn.png</value>
+  </data>
+  <data name="STR_LOGIN_PWD" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="STR_LOGIN_TITLE" xml:space="preserve">
+    <value>如果你要想用本服务,要注册。</value>
+  </data>
+  <data name="STR_LOGOUT" xml:space="preserve">
+    <value>推出</value>
+  </data>
+  <data name="STR_LOG_MANAGE" xml:space="preserve">
+    <value>运行记录</value>
+  </data>
+  <data name="STR_MEMO" xml:space="preserve">
+    <value>记录</value>
+  </data>
+  <data name="STR_MESSAGE_CONTENT" xml:space="preserve">
+    <value>信息内容</value>
+  </data>
+  <data name="STR_MESSAGE_TITLE" xml:space="preserve">
+    <value>信息标题</value>
+  </data>
+  <data name="STR_MINUTE" xml:space="preserve">
+    <value>分</value>
+  </data>
+  <data name="STR_MONTH" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="STR_MONTH_DAY_TIME" xml:space="preserve">
+    <value>月/日/时</value>
+  </data>
+  <data name="STR_MONTH_STAT" xml:space="preserve">
+    <value>月间统计</value>
+  </data>
+  <data name="STR_MY_ACCOUNT" xml:space="preserve">
+    <value>我的账户</value>
+  </data>
+  <data name="STR_MY_ACCOUNT_INFO" xml:space="preserve">
+    <value>我的账户情报</value>
+  </data>
+  <data name="STR_NICKNAME" xml:space="preserve">
+    <value>注册名</value>
+  </data>
+  <data name="STR_NO" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="STR_NO_ACT" xml:space="preserve">
+    <value>比活性化</value>
+  </data>
+  <data name="STR_NO_ACTIVATED" xml:space="preserve">
+    <value>比活性化了</value>
+  </data>
+  <data name="STR_PASSWORD" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="STR_PASSWORD_CHANGE" xml:space="preserve">
+    <value>密码删改</value>
+  </data>
+  <data name="STR_PASSWORD_CONFIRM" xml:space="preserve">
+    <value>密码再输入</value>
+  </data>
+  <data name="STR_PRODUCT_TYPE" xml:space="preserve">
+    <value>制品型</value>
+  </data>
+  <data name="STR_PUSH_ALARM" xml:space="preserve">
+    <value>推送通知</value>
+  </data>
+  <data name="STR_PUSH_LIST" xml:space="preserve">
+    <value>推送通知</value>
+  </data>
+  <data name="STR_PUSH_SEND" xml:space="preserve">
+    <value>推送发送</value>
+  </data>
+  <data name="STR_QRCODE_COUNT" xml:space="preserve">
+    <value>二维码生成数量</value>
+  </data>
+  <data name="STR_QRCODE_CREATE" xml:space="preserve">
+    <value>二维吗生成</value>
+  </data>
+  <data name="STR_QRCODE_INFO" xml:space="preserve">
+    <value>二维码情报</value>
+  </data>
+  <data name="STR_QRCODE_MANAGE" xml:space="preserve">
+    <value>二维码管理</value>
+  </data>
+  <data name="STR_QRCODE_NUMBER" xml:space="preserve">
+    <value>二维码文字列</value>
+  </data>
+  <data name="STR_REAL_PRODUCT" xml:space="preserve">
+    <value>实际制品</value>
+  </data>
+  <data name="STR_REG_DATE" xml:space="preserve">
+    <value>注册日</value>
+  </data>
+  <data name="STR_REG_DEVICE_COUNT" xml:space="preserve">
+    <value>登记的 手机数量</value>
+  </data>
+  <data name="STR_SAVE" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="STR_SAVE_CONFIRM" xml:space="preserve">
+    <value>保存确认</value>
+  </data>
+  <data name="STR_SAVE_EXCEL" xml:space="preserve">
+    <value>保存到文件</value>
+  </data>
+  <data name="STR_SCALE_SETTING" xml:space="preserve">
+    <value>范围配置</value>
+  </data>
+  <data name="STR_SEARCH" xml:space="preserve">
+    <value>检索</value>
+  </data>
+  <data name="STR_SEND" xml:space="preserve">
+    <value>发送</value>
+  </data>
+  <data name="STR_SENDED_DEVICE_NUMBER" xml:space="preserve">
+    <value>已发手机个数</value>
+  </data>
+  <data name="STR_SEND_DATE" xml:space="preserve">
+    <value>发送日</value>
+  </data>
+  <data name="STR_SERVER_CONNECT_CYCLE" xml:space="preserve">
+    <value>服务器通信周期</value>
+  </data>
+  <data name="STR_SETTING" xml:space="preserve">
+    <value>配置</value>
+  </data>
+  <data name="STR_SLOW_SEND" xml:space="preserve">
+    <value>预约发送</value>
+  </data>
+  <data name="STR_STAT" xml:space="preserve">
+    <value>统计</value>
+  </data>
+  <data name="STR_STATISTICS" xml:space="preserve">
+    <value>统计现况</value>
+  </data>
+  <data name="STR_STATUS" xml:space="preserve">
+    <value>情况</value>
+  </data>
+  <data name="STR_SUM" xml:space="preserve">
+    <value>合计</value>
+  </data>
+  <data name="STR_TEST_PRODUCT" xml:space="preserve">
+    <value>考试制品</value>
+  </data>
+  <data name="STR_TITLE" xml:space="preserve">
+    <value>“衣服AR”服务器管理网页</value>
+  </data>
+  <data name="STR_UPDATE_INFO" xml:space="preserve">
+    <value>更新明细</value>
+  </data>
+  <data name="STR_UPDATE_VERSION" xml:space="preserve">
+    <value>更新版本</value>
+  </data>
+  <data name="STR_USED_QRCODE_NUMBER" xml:space="preserve">
+    <value>使用的二维码个·数</value>
+  </data>
+  <data name="STR_YEAR" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="STR_YEAR_STAT" xml:space="preserve">
+    <value>年间统计</value>
+  </data>
+  <data name="STR_YES" xml:space="preserve">
+    <value>是</value>
+  </data>
+</root>
